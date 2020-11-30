@@ -1,7 +1,22 @@
-/* @import "~video-react/styles/scss/video-react"; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  background-color: #ccc;
+}
 
 .App {
   text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+}
+
+.videos {
+  padding: 2rem;
+  box-shadow: 2px 0 2px;
+  margin-bottom: 1rem;
+  display: block;
+  margin: auto;
+  border: 10px outset #ddd;
 }
 
 .songs-container {
