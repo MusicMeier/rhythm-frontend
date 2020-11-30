@@ -6,10 +6,11 @@ export default function Songs(props) {
 
     return (
         <div>
-            {props.song.title}
-
-            <ReactPlayer
+            <h3>{props.song.title}
+                </h3>
+            <ReactPlayer className="videos"
                 url={props.song.video}/>
+            {/* <button onClick={() => (event)}/>  */}
 
         </div>
     )
