@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactPlayer from "react-player" 
 // import { Player } from 'video-react';
 
 export default function Songs(props) {
+
+    const [likeCount, setLikeCount] = useState(0)
+
+    function handleClick(){
+        setLikeCount(likeCount + 1)
+       
+    }
 
     return (
         <div>
@@ -10,8 +17,8 @@ export default function Songs(props) {
                 </h3>
             <ReactPlayer className="videos"
                 url={props.song.video}/>
-            {/* <button onClick={() => (event)}/>  */}
-
+                <h4>{likeCount}</h4>
+            <button onClick={handleClick}>Like</button> 
         </div>
     )
 }
